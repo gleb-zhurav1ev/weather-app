@@ -146,6 +146,7 @@ body {
 }
 .card-img {
 	object-fit: cover;
+	animation: pulse_picture 1s infinite alternate;
 }
 
 .card-description {
@@ -168,4 +169,13 @@ body {
 .footer a {
 	color: #2e7695;
 	text-decoration: none;
+}
+
+@keyframes pulse_picture {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
 }
